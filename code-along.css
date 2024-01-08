@@ -1,5 +1,5 @@
 /****************************************
-* Transform
+* Transform happenson page load
 ****************************************/
 .transform-demo > div {
   height: 40px;
@@ -7,11 +7,14 @@
   width: 20%;
   margin: auto;
   display: inline-block;
-  transition: translatex(140px);
+  transition: 5s;
+
 }
-.transform-demo:hover > div {
-  transform: translateX(150px);
+
+.transform-demo>div:hover {
+transform: translateX(150px) rotate(180deg);
 }
+
 /****************************************
 * Transition
 ****************************************/
@@ -26,7 +29,7 @@
 
 .transition-demo img:hover {
   filter: none;
-  transform: scale(1.25) rotate(180deg);
+  transform: scale(.75) rotate(180deg);
 }
 
 /****************************************
